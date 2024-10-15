@@ -2,16 +2,15 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: clang build active file",
-            "command": "/usr/bin/clang",
-            "args": [
-                "-fcolor-diagnostics",
-                "-fansi-escape-codes",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+           "args": [
+                "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "-I${workspaceFolder}",
+                "${workspaceFolder}/*.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
-                ""
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
