@@ -24,3 +24,7 @@ istream& operator>>(istream& is, ChuyenMon& cm) {
 void ChuyenMon::inThongTinChuyenNganh() const {
     cout << *this;
 }
+int main(){
+    
+    return 0;
+}

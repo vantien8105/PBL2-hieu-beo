@@ -14,21 +14,31 @@ protected:
     string gioiTinh;     
     string ngaySinh;    
     string soDienThoai;
-    DiaChi diaChi;     
-    ChuyenMon chuyenMon; 
+    string diaChi;   //day cung vay   
+    string maChuyenMon; //o day chi can ma chuyen mon roi truy xuat vao file co ma chuyen mon do la duoc 
     string congViec;    
-    HopDong hopDong;    
+    string maHopDong;  //day cung vay
+    string username;
+    string password;
+    string role;  
     double heSoLuong;  
 
 public:
+
     NhanSu(string ma = "", string ten = "", string gt = "", string ns = "", string sdt = "", 
-        DiaChi dc = DiaChi(), ChuyenMon cm = ChuyenMon(), string cviec = "", 
-        HopDong hd = HopDong(), double hs = 0.0); 
+        string dc = "" , string cm = "", string cviec = "", 
+        string hd ="", double hs = 0.0); //string username, string password
     double tinhLuong() const;    
     double tinhPhuCap() const;   
     double tinhThucLinh() const;  
     void layThongTinCaNhan() const;
     void layLichLamViecVaHop() const;
+    string getUsername();
+    string getRole();
+    void printInfo();
+    void loadEmployeeInfo(string );
+
+    // virtual bool login(string u, string p) = 0;
     friend ostream& operator<<(ostream& os, const NhanSu& ns);
     friend istream& operator>>(istream& is, NhanSu& ns);
 };

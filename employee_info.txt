@@ -1,0 +1,4 @@
+employee1 NguyenVanA Nam 01-01-1990 0912345678 ThanhKhe1 dev1 FE HDChinh1
+employee2 LeThiB Nu 02-02-1991 0987654321 HaiChau1 Analyst1 Sell HDThoiVu1
+manager1 NguyenHuuB 01-11-1990 0355572521 ThanhKhe2 dev2 SA HDChinh2
+manager2 PhanTu 21-10-1993 0389809231 ThanhKhe3 Marketing1 PM HDChinh3
