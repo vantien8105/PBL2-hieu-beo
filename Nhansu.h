@@ -14,10 +14,10 @@ protected:
     string gioiTinh;     
     string ngaySinh;    
     string soDienThoai;
-    string diaChi;   //day cung vay   
-    string maChuyenMon; //o day chi can ma chuyen mon roi truy xuat vao file co ma chuyen mon do la duoc 
+    string diaChi;  
+    string maChuyenMon; 
     string congViec;    
-    string maHopDong;  //day cung vay
+    string maHopDong;  
     string username;
     string password;
     string role;  
@@ -27,20 +27,25 @@ public:
 
     NhanSu(string ma = "", string ten = "", string gt = "", string ns = "", string sdt = "", 
         string dc = "" , string cm = "", string cviec = "", 
-        string hd ="", double hs = 0.0); //string username, string password
-    double tinhLuong() const;    
-    double tinhPhuCap() const;   
-    double tinhThucLinh() const;  
-    void layThongTinCaNhan() const;
-    void layLichLamViecVaHop() const;
+        string hd ="", double hs = 0.0, string role =""); //string username, string password
+    double tinhLuong();    
+    double tinhPhuCap();   
+    double tinhThucLinh();  
+    void layThongTinCaNhan();
+    void layLichLamViecVaHop();
     string getUsername();
     string getRole();
+    void setUsername(const string& username) {
+    this->username = username;
+    }
+    void setRole(const string& role) {
+    this->role = role;
+    }
     void printInfo();
-    void loadEmployeeInfo(string );
-
-    // virtual bool login(string u, string p) = 0;
+    void loadEmployeeInfo(string maNS);
     friend ostream& operator<<(ostream& os, const NhanSu& ns);
     friend istream& operator>>(istream& is, NhanSu& ns);
+    virtual ~NhanSu() {}
 };
 
 #endif

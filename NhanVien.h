@@ -6,14 +6,24 @@
 
 class NhanVien : public NhanSu {
 protected:
-    string boPhanLamViec; //Ma bo phan
+    string boPhanLamViec;
 public:      
     NhanVien();
-    NhanVien(string ma, string ten, string gt, string ns, string sdt, string dc, string cm, string cviec, string hd, double hs, string bp, string td, string username, string password) 
-    : NhanSu( ma ,  ten, gt , ns, sdt ,  dc, cm,  cviec, hd, hs), boPhanLamViec(bp){}
+    NhanVien(string ma, string ten, string gt, string ns, string sdt, string dc, string cm, string cviec,
+                string hd, double hs, string role, string bp, string td, string username, string password);
+    void loadEmployeeInfo(string maNS);
     void baoCaoTienDo();
     void layThongTinCaNhan();
-    // bool login(string u, string p) override;
+    void xinNghiPhep();
+    void deNghiTangLuong();
+    string getUsername(){
+        return username;
+    }
+    string getRole(){
+        return "Employee";
+    }
+    friend ostream& operator<<(ostream& os, const NhanVien& ns);
+    friend istream& operator>>(istream& is, NhanVien& ns);
 };
 
 #endif

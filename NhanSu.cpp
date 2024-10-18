@@ -6,22 +6,21 @@
 
 using namespace std;
 
-//o day t cung chinh lai ne
-NhanSu::NhanSu(string ma, string ten, string gt, string ns, string sdt, string dc, string cm, string cviec, string hd, double hs)
+NhanSu::NhanSu(string ma, string ten, string gt, string ns, string sdt, string dc, string cm, string cviec, string hd, double hs, string role)
     : maNhanSu(ma), hoTen(ten), gioiTinh(gt), ngaySinh(ns), soDienThoai(sdt), diaChi(dc), maChuyenMon(cm), congViec(cviec), maHopDong(hd), heSoLuong(hs) {}
-double NhanSu::tinhLuong() const{
-    return heSoLuong * 3000000;
+double NhanSu::tinhLuong(){
+    return heSoLuong * 3000.0;
 }
-double NhanSu::tinhPhuCap() const{
-    return 500000;
+double NhanSu::tinhPhuCap(){
+    return 500.0;
 }
-double NhanSu::tinhThucLinh() const{
+double NhanSu::tinhThucLinh(){
     return tinhLuong() + tinhPhuCap();
 }
-void NhanSu::layThongTinCaNhan() const{
+void NhanSu::layThongTinCaNhan(){
     cout << *this; 
 }
-void NhanSu::layLichLamViecVaHop() const{
+void NhanSu::layLichLamViecVaHop(){
     cout << "Lich lam viec va hop cua nhan vien " << hoTen << ":" << endl;
     cout << "Thoi gian hop: 9:00 AM, Ngay 1 thang 11 nam 2024" << endl;
     cout << "Cong viec: " << congViec << endl;
@@ -47,7 +46,6 @@ void NhanSu::printInfo() {
 void NhanSu::loadEmployeeInfo(string maNS) {
         ifstream infile("employee_info.txt");
         string line;
-        // cout<<"hiii";
         while (getline(infile, line)) {
             stringstream ss(line);
             string maNhanSuFile;
@@ -55,27 +53,15 @@ void NhanSu::loadEmployeeInfo(string maNS) {
             if (maNhanSuFile == maNS) {
                 maNhanSu = maNS;
                 ss >> this->hoTen >> this->gioiTinh >> this->ngaySinh >> this->soDienThoai;
-                //string soNha, duong, thanhPho;
-                //ss >> soNha >> duong >> thanhPho;
-                //string diaChi;
                 ss >> this->diaChi;
-                // diaChi = DiaChi(soNha, duong, thanhPho);
-                // string nganh;
-                // int namKinhNghiem;
-                // ss >> nganh >> namKinhNghiem;
-                //string maChuyenMon;
                 ss >> this->maChuyenMon;
                 ss >> this->congViec;
-                //ss >> congViec >> hopDong.loaiHopDong >> hopDong.ngayBatDau >> hopDong.ngayKetThuc;
-                //string maHopDong;
-                ss >>this->maHopDong;
+                ss >> this->maHopDong;
+                ss >> this->heSoLuong;
                 break;
             }
         }
-    }
-
-
-
+}
 ostream& operator<<(ostream& os, const NhanSu& ns) {
     os << "Ma nhan su: " << ns.maNhanSu << endl;
     os << "Ho ten: " << ns.hoTen << endl;

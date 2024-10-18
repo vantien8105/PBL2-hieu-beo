@@ -10,14 +10,24 @@ protected:
     int soNhanVienQuanLy;
 public:
     QuanLy();
-    //Nên thừa kế constructor từ lớp Nhansu sẽ ok hơn. đỡ bị chê lặp code =))
-    QuanLy(string ma, string ten, string gt, string ns, string sdt, string dc, string cm, string cviec, string hd, double hs, 
-            string BPQL, int snv, string username, string password)
-            : NhanSu( ma,  ten,  gt,  ns,  sdt,  dc,  cm, cviec , hd,  hs), boPhanQuanLy(BPQL), soNhanVienQuanLy(snv) {};
-
+    QuanLy(string ma, string ten, string gt, string ns, string sdt, string dc, string cm, string cviec, string hd, double hs, string role, 
+            string BPQL, int snv, string username, string password);
+    void loadEmployeeInfo(string maNS);
     void taoCuocHop();
     void layThongTinCaNhan();
-    // bool login(string u, string p) override;
+    double tinhLuong();    
+    double tinhPhuCap();   
+    double tinhThucLinh();
+    void xetDuyetNghiPhep();
+    void danhGiaNhanVien();
+    void xetDuyetTangLuong();
+    string getUsername(){
+        return username;
+    }
+    string getRole(){
+    }
+    friend ostream& operator<<(ostream& os, const QuanLy& ns);
+    friend istream& operator>>(istream& is, QuanLy& ns);
 };
 
 #endif

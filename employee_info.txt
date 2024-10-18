@@ -1,4 +1,18 @@
-employee1 NguyenVanA Nam 01-01-1990 0912345678 ThanhKhe1 dev1 FE HDChinh1
-employee2 LeThiB Nu 02-02-1991 0987654321 HaiChau1 Analyst1 Sell HDThoiVu1
-manager1 NguyenHuuB 01-11-1990 0355572521 ThanhKhe2 dev2 SA HDChinh2
-manager2 PhanTu 21-10-1993 0389809231 ThanhKhe3 Marketing1 PM HDChinh3
+employee1 NguyenVanA Nam 01-01-1990 0912345678 ThanhKhe1 dev1 FE HDChinh1 3.0 BP01 cc
+employee2 LeThiB Nu 02-02-1991 0987654321 HaiChau1 Analyst1 Sell HDThoiVu1 4.0 BP02
+employee3 TranVanC Nam 03-03-1992 0934567890 SonTra1 Tester1 QA HDChinh2 2.7 BP01
+employee4 NgoThiD Nu 04-04-1993 0945678901 LienChieu1 Designer1 UX HDThoiVu2 4.8 BP03
+employee5 PhamVanE Nam 05-05-1994 0956789012 CamLe1 DevOps1 BE HDChinh3 1.2 BP02
+employee6 VoThiF Nu 06-06-1995 0967890123 HoaVang1 BA1 Finance HDThoiVu3 2.3 BP03
+employee7 HoangVanJ Nam 07-07-1990 0912345000 LienChieu2 Content1 Marketing HDChinh1 3.3 BP04
+employee8 VuThiK Nu 08-08-1991 0923456000 HaiChau1 Designer2 UX HDThoiVu1 4.1 BP03
+employee9 TranVanL Nam 09-09-1992 0934567000 SonTra2 Tester2 QA HDChinh2 2.9 BP01
+employee10 PhamThiM Nu 10-10-1993 0945678000 CamLe1 DevOps2 BE HDThoiVu2 4.5 BP02
+employee11 NguyenVanN Nam 11-11-1994 0956789000 HaiChau2 Developer FE HDChinh3 2.0 BP01
+employee12 LeThiO Nu 12-12-1995 0967890000 LienChieu2 Content2 Marketing HDChinh4 3.5 BP04
+manager1 NguyenHuuB Nam 01-11-1990 0355572521 ThanhKhe2 dev2 SA HDChinh2 5.5 BP01 4
+manager2 LyTieuLong Nam 21-10-1993 0389809231 ThanhKhe3 Marketing1 PM HDChinh3 6.7 BP02 3
+manager3 LeVanG Nam 12-12-1985 0367890123 HaiChau2 dev3 CTO HDChinh4 7.6 BP03 3
+manager4 BuiThiH Nu 13-03-1987 0378901234 LienChieu2 Marketing2 CMO HDChinh5 8.0 BP04 2
+manager5 HoangVanI Nam 14-07-1982 0390123456 CamLe2 BA2 COO HDChinh6 9.2 BP05 0
+

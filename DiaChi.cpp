@@ -19,7 +19,3 @@ istream& operator>>(istream& is, DiaChi& dc) {
 void DiaChi::layThongTinDiaChi() const {
     cout << *this;
 }
-int main(){
-    
-    return 0;
-}
