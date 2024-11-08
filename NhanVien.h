@@ -20,6 +20,7 @@ public:
     void xinNghiPhep();
     void deNghiTangLuong();
     string getMaNV() const override { return maNhanSu; }
+    string getMaHD() const {return maHopDong;}
     string getRole() const override { return "Employee"; }
     string getBoPhanLamViec() const override{ return boPhanLamViec; }
     string toString() const;
