@@ -4,6 +4,12 @@ employee3 qwerty Employee
 employee4 zxcvbn Employee
 employee5 asdfgh Employee
 employee6 987654 Employee
+employee7 123456 Employee
+employee8 123456 Employee
+employee9 123456 Employee
+employee10 123456 Employee
+employee11 123456 Employee
+employee12 123456 Employee
 manager1 123456 Manager
 manager2 abcdef Manager
 manager3 112233 Manager
